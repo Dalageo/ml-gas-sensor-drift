@@ -1,10 +1,10 @@
 cff-version: 1.2.0
 message: "If this project was helpful, please cite it as below."
-title: "ML-GasSensorDrift"
+title: "ml-gas-sensor-drift"
 authors:
   - family-names: "Dalageorgos"
     given-names: "Konstantinos"
 version: "1.0.0" 
 date-released: "2024-10-28"
-repository-code: "https://github.com/Dalageo/ML-GasSensorDrift"
+repository-code: "https://github.com/Dalageo/ml-gas-sensor-drift"
 license: "GNU Affero General Public License v3.0"
