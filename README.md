@@ -74,7 +74,7 @@ where:
 
 2. **Clone the repository**:
    ```sh
-   git clone https://github.com/Dalageo/ML-GasSensorDrift.git
+   git clone https://github.com/Dalageo/ml-gas-sensor-drift.git
 
 3. **Navigate to the cloned directory**:
    ```sh
