@@ -24,6 +24,7 @@ From the data insights, it was determined that distinct models are more effectiv
 
 *An inconsistency was identified between the documented and actual gas counts within each batch. For example, Batch 1 gas counts are documented as 83 (Ethanol), 30 (Ethylene), 70 (Ammonia), 98 (Acetaldehyde), 90 (Acetone), 74 (Toluene), but the actual order in the dataset is 90 (Ethanol), 98 (Ethylene), 83 (Ammonia), 30 (Acetaldehyde), 70 (Acetone), 74 (Toluene). To address this, an option to align the dataset with the documented gas counts is provided in the notebook. However, it is unclear which order (documented or actual) is correct, so the notebook proceeds with the actual dataset configuration rather than the description.*
  
+<br>
 
 ## Dataset Description
 
@@ -64,9 +65,11 @@ where:
 - **Steady-State Features (DR)**: These represent the maximum resistance change relative to the baseline for each sensor, with a normalized version (`|DR|`) also included.
 - **Dynamic Features (EMA)**: These features capture the rising and decaying transient portions of the sensor response over time, calculated using an Exponential Moving Average (EMA). For each sensor, EMA features are generated with three smoothing parameters (`Alfa`) set at 0.1, 0.01, and 0.001 to capture the dynamics of both the increasing (EMAi) and decaying (EMAd) parts of the sensor’s response.
 
+<br>
+
 ## Setup Instructions
 
-### <img src="https://github.com/user-attachments/assets/8d36d1a5-e9b1-40d1-97c9-3d4ca49e9c95" alt="Local PC" width="18" height = "16" /> **Local Environment Setup**
+### <img src="https://github.com/user-attachments/assets/8d36d1a5-e9b1-40d1-97c9-3d4ca49e9c95" alt="Local PC" width="18" /> **Local Environment Setup**
 
 1. **Download the required dataset from**:
     - **[UCI Machine Learning Repository - Gas Sensor Array Drift at Different Concentrations](https://archive.ics.uci.edu/dataset/270/gas+sensor+array+drift+dataset+at+different+concentrations)**
@@ -88,6 +91,8 @@ where:
 
 *To run XGBoost on the GPU, you will need to activate GPU support based on your operating system and install the required dependencies. One option is to follow this [guide](https://www.tensorflow.org/install/pip) provided by [TensorFlow](https://www.tensorflow.org/) for detailed instructions.*
 
+<br>
+
 ## Acknowledgments
 
 The dataset used in this project is provided by the [UCI Machine Learning Repository](https://archive.ics.uci.edu/). Special thanks to Vergara et al. and Rodriguez-Lujan et al. for making this dataset available for educational and research purposes. Their foundational work is documented in the following publications:
@@ -95,6 +100,8 @@ The dataset used in this project is provided by the [UCI Machine Learning Reposi
 - A. Vergara, S. Vembu, T. Ayhan, M. A. Ryan, M. L. Homer, and R. Huerta, "Chemical gas sensor drift compensation using classifier ensembles," *Sensors and Actuators B: Chemical*, vol. 166–167, pp. 320-329, 2012. [Online]. Available: https://doi.org/10.1016/j.snb.2012.01.074 
 
 - I. Rodriguez-Lujan, J. Fonollosa, A. Vergara, M. Homer, and R. Huerta, "On the calibration of sensor arrays for pattern recognition using the minimal number of experiments," *Chemometrics and Intelligent Laboratory Systems*, vol. 130, pp. 123-134, 2014. [Online]. Available: https://doi.org/10.1016/j.chemolab.2013.10.012
+
+<br>
 
 ## License
 
